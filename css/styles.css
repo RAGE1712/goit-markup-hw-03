@@ -1,0 +1,235 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --active-link-color: #404bbf;
+  --headings-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-mode-background: #f4f4fd;
+  --overlay-color: #2e2f42;
+  --hero-background: #2e2f42;
+  --primary-background-color: #ffffff;
+  --modal-background: #fcfcfc;
+  --primary-font: "Roboto", sans-serif;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: var(--primary-font);
+  color: #434455;
+  background-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+/* Logo */
+.logo {
+  color: var(--primary-brand-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo-studio {
+  color: var(--headings-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+footer .logo-studio {
+  color: var(--light-mode-background);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+/**------------------- Navigation Pannel -----------*/
+.navigation-link {
+  color: var(--headings-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--active-link-color);
+}
+
+/**------------------- Contacts ----------------- */
+.adress {
+  font-style: normal;
+}
+.adress .list {
+  list-style: none;
+}
+.adress .link {
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+.adress .link:hover,
+.adress .link:focus {
+  color: var(--active-link-color);
+}
+
+/**----------------- Section 1 ----------------*/
+.solutions {
+  background-color: #2e2f42;
+}
+.solutions .header {
+  color: var(--primary-background-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+.solutions .order-button {
+  background: var(--primary-brand-color);
+  color: var(--primary-background-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+.solutions .order-button:hover,
+.solutions .order-button:focus {
+  background-color: #404bbf;
+}
+/**----------------------- Section 2 ----------------*/
+.advantages {
+  color: var(--headings-color);
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+.description {
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+/**--------------------- Section 3 -----------------*/
+.works-header {
+  color: var(--headings-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+/**--------------- Section 4 -------------*/
+.team {
+  background-color: #f4f4fd;
+}
+.team-header {
+  color: var(--headings-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.team-card {
+  background-color: #ffffff;
+}
+.team-name {
+  color: var(--headings-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.team-position {
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+/**------------------ Footer ----------------------*/
+.footer {
+  background-color: #2e2f42;
+}
+.motto {
+  color: var(--light-mode-background);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+/**--------------------- Portfolio ----------------*/
+
+.filter {
+  background: var(--light-mode-background);
+  color: var(--primary-brand-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+.filter:hover,
+.filter:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.link {
+  text-decoration: none;
+}
+.projects {
+  color: var(--headings-color);
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+.project-type {
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
