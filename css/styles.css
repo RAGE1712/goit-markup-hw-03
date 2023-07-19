@@ -35,7 +35,9 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 24px auto;
+  max-width: 44px;
+  width: 100%;
+  display: flex;
 }
 .logo-studio {
   color: var(--headings-color);
@@ -46,7 +48,9 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin: 24px auto;
+  max-width: 71px;
+  width: 100%;
+  display: block;
 }
 footer .logo-studio {
   color: var(--light-mode-background);
@@ -59,8 +63,7 @@ footer .logo-studio {
   text-transform: uppercase;
 }
 /**------------------- Navigation Pannel -----------*/
-.navigation {
-  margin: 24px auto;
+.navigation-item {
 }
 .navigation-link {
   color: var(--headings-color);
@@ -71,21 +74,32 @@ footer .logo-studio {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--active-link-color);
 }
-
+.navigation-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  max-width: 261px;
+  width: 100%;
+  margin-left: 76px;
+}
 /**------------------- Contacts ----------------- */
 .address {
   font-style: normal;
-  margin: 24px auto;
+  display: block;
+}
+.adress-item {
 }
 .address .list {
   list-style: none;
 }
-.address .link {
+.address-link {
   color: var(--text-color);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -93,9 +107,13 @@ footer .logo-studio {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  display: block;
+  max-width: 154px;
+  width: 100%;
+  margin: 0;
 }
-.address .link:hover,
-.address .link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--active-link-color);
 }
 
@@ -201,7 +219,6 @@ footer .logo-studio {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   padding-bottom: 8px;
 }
 .team-position {
@@ -211,9 +228,10 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
-
+.team-photo-desc {
+  padding: 32px 0px;
+}
 /**------------------ Footer ----------------------*/
 .footer {
   background-color: #2e2f42;
@@ -266,7 +284,6 @@ footer .logo-studio {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
-  padding-top: 32px;
   padding-bottom: 8px;
 }
 .project-type {
@@ -275,11 +292,13 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
-  margin-bottom: 32px;
 }
 .projects-item {
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--primary-background-color);
+}
+.project-description {
+  padding: 32px 0px;
 }
 .projects-list {
   margin-bottom: 120px;
@@ -303,9 +322,9 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
-
-/*! Reset Styles */
 
 .container {
   width: 100%;
@@ -320,4 +339,5 @@ img {
   padding-top: 24px;
   padding-bottom: 32px;
   margin: 0 auto;
+  display: f;
 }
