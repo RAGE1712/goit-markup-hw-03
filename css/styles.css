@@ -35,6 +35,7 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 24px auto;
 }
 .logo-studio {
   color: var(--headings-color);
@@ -45,6 +46,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin: 24px auto;
 }
 footer .logo-studio {
   color: var(--light-mode-background);
@@ -57,6 +59,9 @@ footer .logo-studio {
   text-transform: uppercase;
 }
 /**------------------- Navigation Pannel -----------*/
+.navigation {
+  margin: 24px auto;
+}
 .navigation-link {
   color: var(--headings-color);
   font-family: var(--primary-font);
@@ -73,13 +78,14 @@ footer .logo-studio {
 }
 
 /**------------------- Contacts ----------------- */
-.adress {
+.address {
   font-style: normal;
+  margin: 24px auto;
 }
-.adress .list {
+.address .list {
   list-style: none;
 }
-.adress .link {
+.address .link {
   color: var(--text-color);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -88,16 +94,17 @@ footer .logo-studio {
   letter-spacing: 0.32px;
   text-decoration: none;
 }
-.adress .link:hover,
-.adress .link:focus {
+.address .link:hover,
+.address .link:focus {
   color: var(--active-link-color);
 }
 
 /**----------------- Section 1 ----------------*/
 .solutions {
   background-color: #2e2f42;
+  padding: 188px 472px 292px 472px;
 }
-.solutions .header {
+.hero-header {
   color: var(--primary-background-color);
   text-align: center;
   font-family: var(--primary-font);
@@ -106,6 +113,7 @@ footer .logo-studio {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
 }
 .solutions .order-button {
   background: var(--primary-brand-color);
@@ -117,6 +125,8 @@ footer .logo-studio {
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
+  margin-top: 48px;
+  padding: 16px 32px;
 }
 .solutions .order-button:hover,
 .solutions .order-button:focus {
@@ -124,14 +134,18 @@ footer .logo-studio {
 }
 /**----------------------- Section 2 ----------------*/
 .advantages {
+  padding: 120px 156px;
+}
+.advantages-header {
   color: var(--headings-color);
   font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
-.description {
+.advantages-description {
   color: var(--text-color);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -139,6 +153,10 @@ footer .logo-studio {
   letter-spacing: 0.32px;
 }
 /**--------------------- Section 3 -----------------*/
+.works {
+  padding-bottom: 120px;
+}
+
 .works-header {
   color: var(--headings-color);
   text-align: center;
@@ -148,11 +166,17 @@ footer .logo-studio {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  max-width: 324px;
+  max-height: 40px;
+  margin: 0 auto;
+  padding-bottom: 72px;
 }
 
 /**--------------- Section 4 -------------*/
 .team {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
 }
 .team-header {
   color: var(--headings-color);
@@ -163,6 +187,8 @@ footer .logo-studio {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .team-card {
   background-color: #ffffff;
@@ -175,6 +201,8 @@ footer .logo-studio {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 .team-position {
   color: var(--text-color);
@@ -183,6 +211,7 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /**------------------ Footer ----------------------*/
@@ -195,11 +224,20 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
+  padding-bottom: 100px;
+  max-width: 264px;
 }
 
+.footer-logo {
+  padding-top: 102px;
+  padding-bottom: 18px;
+}
 /**--------------------- Portfolio ----------------*/
-
-.filter {
+.filter-list {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+.filter-button {
   background: var(--light-mode-background);
   color: var(--primary-brand-color);
   text-align: center;
@@ -210,21 +248,23 @@ footer .logo-studio {
   letter-spacing: 0.64px;
   cursor: pointer;
 }
-.filter:hover,
-.filter:focus {
+.filter-button:hover,
+.filter-button:focus {
   color: #ffffff;
   background-color: #404bbf;
 }
 .link {
   text-decoration: none;
 }
-.projects {
+.projects-header {
   color: var(--headings-color);
   font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 .project-type {
   color: var(--text-color);
@@ -232,4 +272,48 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+.projects-item {
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--primary-background-color);
+}
+.projects-list {
+  margin-bottom: 120px;
+}
+/*! Reset Styles */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+/*! Reset Styles */
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin: 0 auto;
 }
