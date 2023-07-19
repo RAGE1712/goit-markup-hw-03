@@ -35,9 +35,7 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  max-width: 44px;
-  width: 100%;
-  display: flex;
+  margin-right: 76px;
 }
 .logo-studio {
   color: var(--headings-color);
@@ -48,9 +46,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  max-width: 71px;
-  width: 100%;
-  display: block;
 }
 footer .logo-studio {
   color: var(--light-mode-background);
@@ -63,6 +58,21 @@ footer .logo-studio {
   text-transform: uppercase;
 }
 /**------------------- Navigation Pannel -----------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header-container {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-item {
 }
 .navigation-link {
@@ -84,20 +94,18 @@ footer .logo-studio {
 .navigation-list {
   display: flex;
   gap: 40px;
-  justify-content: center;
-  max-width: 261px;
-  width: 100%;
-  margin-left: 76px;
 }
 /**------------------- Contacts ----------------- */
 .address {
   font-style: normal;
-  display: block;
 }
 .adress-item {
 }
-.address .list {
+
+.address-list {
   list-style: none;
+  display: flex;
+  gap: 40px;
 }
 .address-link {
   color: var(--text-color);
@@ -107,10 +115,6 @@ footer .logo-studio {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
-  display: block;
-  max-width: 154px;
-  width: 100%;
-  margin: 0;
 }
 .address-link:hover,
 .address-link:focus {
@@ -333,11 +337,4 @@ img {
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
-}
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 32px;
-  margin: 0 auto;
-  display: f;
 }
