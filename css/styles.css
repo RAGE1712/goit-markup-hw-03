@@ -24,6 +24,18 @@ body {
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Logo */
 .logo {
   color: var(--primary-brand-color);
@@ -71,6 +83,7 @@ footer .logo-studio {
 .header-navigation {
   display: flex;
   align-items: center;
+  margin-right: 332px;
 }
 
 .navigation-item {
@@ -124,7 +137,7 @@ footer .logo-studio {
 /**----------------- Section 1 ----------------*/
 .solutions {
   background-color: #2e2f42;
-  padding: 188px 472px 292px 472px;
+  padding: 188px 0;
 }
 .hero-header {
   color: var(--primary-background-color);
@@ -135,7 +148,8 @@ footer .logo-studio {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  width: 496px;
+  max-width: 496px;
+  margin: 0 auto;
 }
 .solutions .order-button {
   background: var(--primary-brand-color);
@@ -147,8 +161,14 @@ footer .logo-studio {
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
-  margin-top: 48px;
+
   padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 48px auto;
 }
 .solutions .order-button:hover,
 .solutions .order-button:focus {
@@ -156,7 +176,14 @@ footer .logo-studio {
 }
 /**----------------------- Section 2 ----------------*/
 .advantages {
-  padding: 120px 156px;
+  padding: 120px 0;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  width: calc((100% - 72px) / 4);
 }
 .advantages-header {
   color: var(--headings-color);
@@ -178,7 +205,13 @@ footer .logo-studio {
 .works {
   padding-bottom: 120px;
 }
-
+.works-list {
+  display: flex;
+  gap: 24px;
+}
+.works-item {
+  width: calc((100% - 48px) / 3);
+}
 .works-header {
   color: var(--headings-color);
   text-align: center;
@@ -192,13 +225,13 @@ footer .logo-studio {
   max-width: 324px;
   max-height: 40px;
   margin: 0 auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 /**--------------- Section 4 -------------*/
 .team {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .team-header {
   color: var(--headings-color);
@@ -210,10 +243,16 @@ footer .logo-studio {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-card {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   color: var(--headings-color);
@@ -336,5 +375,4 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
