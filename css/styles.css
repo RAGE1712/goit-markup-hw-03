@@ -247,6 +247,9 @@ footer .logo-studio {
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--cornflower, #e7e9fc);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -272,6 +275,7 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-bottom: 32px;
 }
 .projects-item {
   border: 1px solid var(--cornflower, #e7e9fc);
