@@ -242,10 +242,9 @@ footer .logo-studio {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
-team-list {
+.team-list {
   display: flex;
   gap: 24px;
 }
@@ -290,8 +289,8 @@ team-list {
 }
 
 .footer-logo {
-  padding-top: 102px;
-  padding-bottom: 18px;
+  padding-top: 100px;
+  padding-bottom: 16px;
 }
 /**--------------------- Portfolio ----------------*/
 .filter-list {
