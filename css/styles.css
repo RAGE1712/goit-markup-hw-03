@@ -70,7 +70,7 @@ img {
 }
 /*! --------------------------------------------------*/
 
-/** ----------------------- Logo --------------------*/
+/** ----------------------- Header Logo --------------------*/
 .logo {
   color: var(--primary-brand-color);
   font-family: Raleway, sans-serif;
@@ -93,16 +93,7 @@ img {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-footer .logo-studio {
-  color: var(--light-mode-background);
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
+
 /**------------------- Navigation Pannel -----------*/
 .header {
   padding-top: 24px;
@@ -311,6 +302,7 @@ footer .logo-studio {
 /**------------------ Footer ----------------------*/
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .motto {
   color: var(--light-mode-background);
@@ -318,13 +310,22 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
-  padding-bottom: 100px;
   max-width: 264px;
 }
+footer .logo-studio {
+  color: var(--light-mode-background);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
 
-.footer-logo {
-  padding-top: 100px;
-  padding-bottom: 16px;
+.footer-logo .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /**--------------------- Portfolio ----------------*/
 .filters {
