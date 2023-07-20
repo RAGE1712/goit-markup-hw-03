@@ -295,7 +295,7 @@ footer .logo-studio {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .team-position {
   color: var(--text-color);
@@ -385,6 +385,7 @@ footer .logo-studio {
 .project-description {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
+  border-top: none;
 }
 .projects-list {
   display: flex;
