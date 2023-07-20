@@ -312,7 +312,7 @@ img {
   letter-spacing: 0.32px;
   max-width: 264px;
 }
-footer .logo-studio {
+.footer .logo-studio {
   color: var(--light-mode-background);
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -323,10 +323,11 @@ footer .logo-studio {
   text-transform: uppercase;
 }
 
-.footer-logo .logo {
+.footer .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 /**--------------------- Portfolio ----------------*/
 .filters {
   padding-top: 96px;
