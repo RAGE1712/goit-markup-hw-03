@@ -110,9 +110,6 @@ img {
   align-items: center;
   margin-right: 332px;
 }
-
-.navigation-item {
-}
 .navigation-link {
   color: var(--headings-color);
   font-family: var(--primary-font);
@@ -136,8 +133,6 @@ img {
 /**------------------- Contacts ----------------- */
 .address {
   font-style: normal;
-}
-.adress-item {
 }
 
 .address-list {
