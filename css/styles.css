@@ -13,13 +13,42 @@
   --modal-background: #fcfcfc;
   --primary-font: "Roboto", sans-serif;
 }
-.link {
-  text-decoration: none;
-}
+
 body {
   font-family: var(--primary-font);
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--text-color);
+  background-color: var(--primary-background-color);
+}
+
+/*! -----------------Reset Styles ------------------*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .list {
   list-style: none;
@@ -36,7 +65,12 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* Logo */
+.link {
+  text-decoration: none;
+}
+/*! --------------------------------------------------*/
+
+/** ----------------------- Logo --------------------*/
 .logo {
   color: var(--primary-brand-color);
   font-family: Raleway, sans-serif;
@@ -136,7 +170,7 @@ footer .logo-studio {
 
 /**----------------- Section 1 ----------------*/
 .solutions {
-  background-color: #2e2f42;
+  background-color: var(--hero-background);
   padding: 188px 0;
 }
 .hero-header {
@@ -172,7 +206,7 @@ footer .logo-studio {
 }
 .solutions .order-button:hover,
 .solutions .order-button:focus {
-  background-color: #404bbf;
+  background-color: var(--active-link-color);
 }
 /**----------------------- Section 2 ----------------*/
 .advantages {
@@ -230,7 +264,7 @@ footer .logo-studio {
 
 /**--------------- Section 4 -------------*/
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light-mode-background);
   padding: 120px 0;
 }
 .team-header {
@@ -249,7 +283,7 @@ footer .logo-studio {
   gap: 24px;
 }
 .team-card {
-  background-color: #ffffff;
+  background-color: var(--primary-background-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -293,9 +327,16 @@ footer .logo-studio {
   padding-bottom: 16px;
 }
 /**--------------------- Portfolio ----------------*/
-.filter-list {
+.filters {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
+}
+
+.filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 .filter-button {
   background: var(--light-mode-background);
@@ -309,12 +350,13 @@ footer .logo-studio {
   cursor: pointer;
   padding: 12px 24px;
   border-radius: 4px;
-  border: 1px solid var(--cornflower, #e7e9fc);
+  border: 1px solid var(--accent-color);
 }
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--primary-background-color);
+  background-color: var(--active-link-color);
+  border: 1px solid transparent;
 }
 .link {
   text-decoration: none;
@@ -326,7 +368,7 @@ footer .logo-studio {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .project-type {
   color: var(--text-color);
@@ -336,42 +378,17 @@ footer .logo-studio {
   letter-spacing: 0.32px;
 }
 .projects-item {
-  border: 1px solid var(--cornflower, #e7e9fc);
+  border: 1px solid var(--accent-color);
   background: var(--primary-background-color);
+  width: calc((100% - 48px) / 3);
 }
 .project-description {
-  padding: 32px 0px;
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
 }
 .projects-list {
-  margin-bottom: 120px;
-}
-/*! Reset Styles */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
